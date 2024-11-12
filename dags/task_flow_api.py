@@ -7,7 +7,7 @@ from datetime import datetime
     dag_id="etl_pipeline",
     schedule_interval="@daily",
     start_date=datetime(2024, 11, 1),
-    catch_up=False,
+    catchup=False,
 )
 def etl_pipeline():
     @task
